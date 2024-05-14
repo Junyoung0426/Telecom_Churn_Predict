@@ -1,4 +1,3 @@
-# Telecom_Churn_Predict
 # Telecom Customer Churn Analysis
 
 This repository contains a Jupyter Notebook that analyzes telecom customer churn data. The goal is to understand the factors that influence customer churn and to build predictive models to identify customers at risk of leaving.
@@ -10,9 +9,15 @@ This repository contains a Jupyter Notebook that analyzes telecom customer churn
 4. [Data Preprocessing](#data-preprocessing)
 5. [Modeling](#modeling)
     - [Logistic Regression](#logistic-regression)
-    - [Random Forest](#random-forest)
+    - [Decision Tree](#decision-tree)
+    - [K-Nearest Neighbors (KNN)](#k-nearest-neighbors-knn)
+    - [Support Vector Machine (SVM)](#support-vector-machine-svm)
+    - [Naive Bayes](#naive-bayes)
+    - [XGBoost](#xgboost)
     - [Gradient Boosting](#gradient-boosting)
-6. [Model Evaluation](#model-evaluation)
+    - [LightGBM](#lightgbm)
+    - [CatBoost](#catboost)
+6. [Model Evaluation & Hyper Parameter](#model-evaluation-&-Hyper-Parameter)
 7. [Conclusion](#conclusion)
 8. [References](#references)
 
@@ -61,13 +66,31 @@ We build several machine learning models to predict customer churn:
 ### Logistic Regression
 A simple yet effective model for binary classification tasks. It estimates the probability of a customer churning based on the input features.
 
-### Random Forest
-An ensemble learning method that combines multiple decision trees to improve predictive performance and control overfitting.
+### Decision Tree
+A non-parametric supervised learning method used for classification. It splits the data into subsets based on the most significant differentiators in the input features.
+
+### K-Nearest Neighbors (KNN)
+A non-parametric method used for classification. It classifies a data point based on how its neighbors are classified.
+
+### Support Vector Machine (SVM)
+A supervised learning model used for classification by finding the hyperplane that best separates the classes in the feature space.
+
+### Naive Bayes
+A probabilistic classifier based on applying Bayes' theorem with strong independence assumptions between the features.
+
+### XGBoost
+An optimized gradient boosting framework designed for speed and performance. It builds models sequentially to correct errors of previous models.
 
 ### Gradient Boosting
-Another ensemble technique that builds models sequentially, with each new model correcting errors made by previous ones.
+An ensemble technique that builds models sequentially, with each new model correcting errors made by previous ones.
 
-## Model Evaluation
+### LightGBM
+A gradient boosting framework that uses tree-based learning algorithms. It is designed for distributed and efficient training of large datasets.
+
+### CatBoost
+A gradient boosting algorithm that handles categorical features naturally without the need for extensive preprocessing.
+
+## Model Evaluation & Hyper Parameter
 Model performance is evaluated using metrics such as accuracy, precision, recall, F1-score, and ROC-AUC. We compare the results of different models to select the best-performing one.
 
 ## Conclusion
